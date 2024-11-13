@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d2ca281f-56f7-40ce-8233-b6d283168561" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/human.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="d2ca281f-56f7-40ce-8233-b6d283168561" name="Changes" comment="написан __init__() для Human, описана функция автоподсчета возраста count_age().">
+      <change afterPath="$PROJECT_DIR$/form.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/human.py" beforeDir="false" afterPath="$PROJECT_DIR$/human.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +35,9 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python.form.executor": "Run",
     "Python.human.executor": "Run",
+    "Python.test.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master"
   }
@@ -69,11 +71,20 @@
       <option name="project" value="LOCAL" />
       <updated>1731266627512</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="написан __init__() для Human, описана функция автоподсчета возраста count_age().">
+      <option name="closed" value="true" />
+      <created>1731352358855</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1731352358855</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="создание env" />
-    <option name="LAST_COMMIT_MESSAGE" value="создание env" />
+    <MESSAGE value="написан __init__() для Human, описана функция автоподсчета возраста count_age()." />
+    <option name="LAST_COMMIT_MESSAGE" value="написан __init__() для Human, описана функция автоподсчета возраста count_age()." />
   </component>
 </project>
