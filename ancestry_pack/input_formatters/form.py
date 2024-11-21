@@ -1,5 +1,6 @@
+from __future__ import annotations
 import os
-from human import Human
+from ..human_pack import Human
 
 
 def format(text: str, spec: str) -> str:
@@ -21,7 +22,7 @@ def get_born_time() -> tuple[int, int, int]:
         print('\r', end='')
 
 
-def get_die_time() -> tuple[int, int, int]:
+def get_die_time() -> tuple[int, int, int] | None:
     while True:
         print(format("Дата смерти: ", 'p'), end='')
         die_time_str = input()
@@ -48,7 +49,7 @@ def valid_date(date: str) -> tuple[int, int, int]:
 
         else: raise ValueError("меньше длинна")
 
-    except ValueError as ex:
+    except ValueError:
         return 0, 0, 0
 
 
@@ -65,23 +66,23 @@ def valid_part_date(part: str, date_type: str):
 
 def form() -> Human:
 
-    try:
-        os.system('cls')
-        print(format("Форма заполнения нового человека", 'h'))
-        print("\n\n")
-        name = input(format("Имя: ", 'p'))
-        surname = input(format("Фамилия: ", 'p'))
-        lastname = input(format("Отчество: ", 'p'))
+    # try:
+    os.system('cls')
+    print(format("Форма заполнения нового человека", 'h'))
+    print("\n\n")
+    name = input(format("Имя: ", 'p'))
+    surname = input(format("Фамилия: ", 'p'))
+    lastname = input(format("Отчество: ", 'p'))
 
-        gender = input(format("Пол: ", 'p'))
+    gender = input(format("Пол: ", 'p'))
 
-        born_time = get_born_time()
-        die_time = get_die_time()
+    born_time = get_born_time()
+    die_time = get_die_time()
 
-        return Human(name=name, surname=surname, lastname=lastname,
-                     born_time=born_time, die_time=die_time, gender=gender)
+    return Human(name=name, surname=surname, lastname=lastname,
+                 born_time=born_time, die_time=die_time, gender=gender)
 
-    except ValueError as ex:
-        print(ex)
-        _ = input("Заполнить еще раз...")
-        form()
+    # except ValueError as ex:
+    #     print(ex)
+    #     _ = input("Заполнить еще раз...")
+    #     form()
