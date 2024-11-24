@@ -1,0 +1,8 @@
+.venv
+old_versions
+ТЗ.txt
+data_to_tests.py
+test_project.py
+proba.py
+ancestry_pack/ancestry_data/*
+.*
