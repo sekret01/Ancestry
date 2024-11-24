@@ -64,15 +64,18 @@ def valid_part_date(part: str, date_type: str):
     raise ValueError()
 
 
-def form() -> Human:
+def form() -> Human | None:
 
     # try:
     os.system('cls')
     print(format("Форма заполнения нового человека", 'h'))
     print("\n\n")
     name = input(format("Имя: ", 'p'))
+    if name == '': return
     surname = input(format("Фамилия: ", 'p'))
+    if surname == '': return
     lastname = input(format("Отчество: ", 'p'))
+    if lastname == '': return
 
     gender = input(format("Пол: ", 'p'))
 

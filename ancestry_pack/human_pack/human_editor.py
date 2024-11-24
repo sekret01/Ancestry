@@ -17,9 +17,11 @@ class HumanEditor:
 
     def edit_born_time(self, human: Human, born_time: tuple[int, int, int]) -> None:
         human.born_time = born_time
+        human.count_age()
 
-    def edit_die_time(self, human: Human, die_time: tuple[int, int, int]) -> None:
+    def edit_die_time(self, human: Human, die_time: tuple[int, int, int] | None) -> None:
         human.die_time = die_time
+        human.count_age()
 
     def edit_gender(self, human: Human, gender: str) -> None:
         human.gender = gender
@@ -56,6 +58,11 @@ class HumanEditor:
         human.children.append(child)
         t = ["mother", "father"][human.gender == "man"]
         child.parents[t] = human
+
+    def delete_child(self, human: Human, child: Human) -> None:
+        human.children.remove(child)
+        t = ["mother", "father"][human.gender == "man"]
+        child.parents[t] = None
 
     def edit_biography(self, human: Human, biography: str) -> None:
         human.biography = biography

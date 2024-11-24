@@ -4,22 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d2ca281f-56f7-40ce-8233-b6d283168561" name="Changes" comment="добавлены основные методы класса Human, написана базовая форма заполнения данных человека">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ancestry_pack/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ancestry_pack/ancestry.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ancestry_pack/human_pack/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ancestry_pack/human_pack/human.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ancestry_pack/human_pack/human_editor.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ancestry_pack/human_pack/human_getter.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ancestry_pack/input_formatters/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ancestry_pack/saver_ancestry.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/console.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/menu.py" afterDir="false" />
+    <list default="true" id="d2ca281f-56f7-40ce-8233-b6d283168561" name="Changes" comment="сделал дофига, описывать лень">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/form.py" beforeDir="false" afterPath="$PROJECT_DIR$/ancestry_pack/input_formatters/form.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/human.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ancestry_pack/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/ancestry_pack/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ancestry_pack/human_pack/human_editor.py" beforeDir="false" afterPath="$PROJECT_DIR$/ancestry_pack/human_pack/human_editor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ancestry_pack/human_pack/human_getter.py" beforeDir="false" afterPath="$PROJECT_DIR$/ancestry_pack/human_pack/human_getter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ancestry_pack/input_formatters/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/ancestry_pack/input_formatters/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ancestry_pack/input_formatters/form.py" beforeDir="false" afterPath="$PROJECT_DIR$/ancestry_pack/input_formatters/form.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/console.py" beforeDir="false" afterPath="$PROJECT_DIR$/console.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/menu.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -211,13 +204,33 @@
       <option name="project" value="LOCAL" />
       <updated>1731517709271</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="сделал дофига, описывать лень">
+      <option name="closed" value="true" />
+      <created>1732220147097</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1732220147097</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="создание env" />
     <MESSAGE value="написан __init__() для Human, описана функция автоподсчета возраста count_age()." />
     <MESSAGE value="добавлены основные методы класса Human, написана базовая форма заполнения данных человека" />
-    <option name="LAST_COMMIT_MESSAGE" value="добавлены основные методы класса Human, написана базовая форма заполнения данных человека" />
+    <MESSAGE value="сделал дофига, описывать лень" />
+    <option name="LAST_COMMIT_MESSAGE" value="сделал дофига, описывать лень" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/console.py</url>
+          <line>283</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

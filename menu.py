@@ -4,11 +4,13 @@ import os
 class Menu:
     def __init__(self, commands: list[str],
                  left_indent: int = 0,
-                 top_indent: int = 0) -> None:
+                 top_indent: int = 0,
+                 title: str = '') -> None:
         self.commands: list[str] = commands
         self.left_indent: int = left_indent
         self.top_indent: int = top_indent
         self.command: str = ''
+        self.title = title
 
 
     def format_print_list(self) -> None:
@@ -23,6 +25,8 @@ class Menu:
     def run(self) -> int:
         while True:
             os.system('cls')
+            if self.title:
+                print(f"{self.title}\n\n")
             self.format_print_list()
             self.command = input("\n#> ")
             if self.is_valid_command(): return int(self.command)

@@ -13,13 +13,13 @@ class HumanGetter:
     def get_born_time(self, human: Human) -> str:
         return (f"{human.born_time[2]:0>2}."
                 f"{human.born_time[1]:0>2}."
-                f"{human.born_time[1]}")
+                f"{human.born_time[0]}")
 
     def get_die_time(self, human: Human) -> str:
         if human.die_time:
             return (f"{human.die_time[2]:0>2}."
                     f"{human.die_time[1]:0>2}."
-                    f"{human.die_time[1]}")
+                    f"{human.die_time[0]}")
         return "нет"
 
     def try_get_human(self, human: Union[Human, None]) -> str:
